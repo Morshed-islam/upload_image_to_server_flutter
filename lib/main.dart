@@ -195,9 +195,47 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
+///TODO
+//   Future<void> uploadImages({List<File>? images}) async {
+//     Map<String, String> headerBody = {
+//       'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9..8WsCZhPTbuoLSnoz0qSxGjLKF3jr5NCkdzta6vOzL6hkHg3JknAyQBwnedpEsbn4dOraRPrbNkm7v3SR8b7bmA',
+//       'Content-Type': 'application/json',
+//     };
+//
+//     List<Map<String, dynamic>> attachments = [];
+//
+//     for (File image in images!) {
+//       String base64Image = base64Encode(image.readAsBytesSync()).toString();
+//       String imageType = 'image/png';
+//
+//       Map<String, dynamic> attachment = {
+//         'messageAttachment': base64Image,
+//         'messageAttachmentBlobType': imageType,
+//       };
+//
+//       attachments.add(attachment);
+//     }
+//
+//     Map<String, dynamic> jsonBody = {
+//       'message': 'hello from app 5.00pm',
+//       'channelPostAttachmentDTOList': attachments,
+//     };
+//
+//     var response = await http.post(
+//       Uri.parse('https://tsct.edooket.com/api/channel-post-with-attachments'),
+//       headers: headerBody,
+//       body: json.encode(jsonBody),
+//     );
+//
+//     if (response.statusCode == 201) {
+//       print('Images uploaded successfully');
+//     } else {
+//       print('Images upload failed');
+//     }
+//   }
 
-
-
+  // List<File> imageFiles = [File('path_to_image_1.png'), File('path_to_image_2.png')];
+  // await uploadImages(images: imageFiles);
 
 
 
